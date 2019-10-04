@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="CoderDojo HTML Courses">
+    <meta name="keywords" content="HTML, CSS, XML">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .background {
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--Headings-->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    
+    <hr>
+
+    <!-- Paragraphs -->
+    <div>
+        <p title="This is a tooltip">Lorem ipsum dolor sit <strong>amet</strong> consectetur <i>adipisicing  </i> elit. Delectus quaerat eaque magnam. Architecto, excepturi, nam quaerat omnis dolores accusamus ullam quis quam a sequi officiis exercitationem veniam consectetur! Qui, magnam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark>Delectus</mark> quaerat eaque magnam. Architecto, excepturi, nam quaerat omnis dolores accusamus ullam quis quam a sequi <small>officiis </small> exercitationem veniam consectetur! Qui, magnam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <del>Delectus</del> quaerat eaque magnam. Architecto, excepturi, nam quaerat omnis dolores accusamus <span style="color: red">ullam quis quam a sequi officiis</span> exercitationem veniam consectetur! Qui, magnam?</p>
+        <p class="background">Lorem <sub>ipsum</sub> <sup>dolor </sup> sit amet consectetur adipisicing elit. Delectus quaerat eaque magnam. Architecto, excepturi, nam quaerat omnis dolores accusamus ullam quis quam a sequi officiis exercitationem veniam consectetur! Qui, magnam?</p>
+    </div>
+
+    <!-- Image -->
+    <a href="https://www.google.com" target="_blank">
+        <img src="images/baniere.png" alt="alternate description here" width="400"></a>
+
+    <br>
+
+    <!-- List exemple -->
+    
+    <p id="bookmark">This is a paragraph</p>
+
+    <ul>
+        <li>List Items 1</li>
+        <li>List Items 2</li>
+        <li>List Items 3</li>
+        <li>List Items 4</li>
+        <li>List Items 5</li>
+    </ul>
+
+    <ol type="1" start="25">
+        <li>List Items 1</li>
+            <ul>
+                <li>Sub buller 1</li>
+                <li>Sub bullet 2</li>
+            </ul>
+        <li>List Items 2</li>
+        <li>List Items 3</li>
+        <li>List Items 4</li>
+        <li>List Items 5</li>
+    </ol>
+
+    <br><br><br>
+
+    <!-- Table Exemples -->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Emmanuel</td>
+                <td>Goldstein</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25s</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>0485/555-555</td>
+                <td>0485/444-444</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>0485/555-555</td>
+        </tr>
+        <tr>
+            <td>0485/444-444</td>
+        </tr>
+    </table>
+    
+    <br>
+    <hr>
+    <br>
+
+    <form action="server.php">
+        <fieldset>
+            <legend>Personal information</legend>
+            First Name: <br>
+            <input type="text" name="firstname" value="" placeholder="First name here"><br>
+            Last Name: <br>
+            <input type="text" name="lastname" value="" placeholder="Last name here"><br>
+            <input type="radio" name="options"> Option 1
+            <input type="radio" name="options"> Option 2 <br>
+            <input type="checkbox" name="checkboxes" checked> Checkbox 1
+            <input type="checkbox" name="checkboxes"> Checkbox 2
+            <input type="checkbox" name="checkboxes"> Checkbox 3 <br>
+            <label for="carSelect">Select:</label>
+            <select name="cars" id="carSelect" multiple>
+                <option value="BMW" selected>BMW</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Audi">Audi</option>
+            </select>
+
+            <br> <br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <button>Click Me</button>
+</body>
+</html> 
